@@ -6,7 +6,7 @@
         <a class="navbar-brand" href="{{ route('about') }}">about</a>
         <a class="navbar-brand" href="#">artisans</a>
          <!-- dropdrown -->
-        <a class="navbar-brand" href="#">contact</a>
+        <a class="navbar-brand" href="{{ route('contacts.create') }}">contact</a>
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         
