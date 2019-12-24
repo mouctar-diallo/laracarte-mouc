@@ -10,10 +10,19 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Mail\ContactMessageMailCreate;
+
 
 Route::get('/', 'PageController@home')->name('home');
 
 Route::get('/about', 'PageController@about')->name('about');
+
+//route  pour le mail
+Route::get('/text-email', function(){
+
+	return new ContactMessageMailCreate('mouctar', 'moucfady@gmail.com', 'je vous remercie pour le mail');
+}); 
+
 
 Route::resource('contacts', 'ContactController');
 
